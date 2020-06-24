@@ -18,7 +18,7 @@ import rosegraphics as rg
 ########################################################################
 
 # ----------------------------------------------------------------------
-# TODO: 2.
+# DONE: 2.
 #  Step a:  READ the   mutate_point   function below.
 #
 #  Step b:  Note that the code in main has 5 parts numbered 1, 2, ... 5.
@@ -121,15 +121,15 @@ def main():
 
     print()
     print('Before: point3 and point4 are:', point3, point4)
-    print('T or F: point3 is point4?', point3 is point4)
-    print('T or F: point3 == point4?', point3 == point4)
+    print('T or F: point3 is point4?', point3 is point4)  # False
+    print('T or F: point3 == point4?', point3 == point4)  # True
 
     point3.fill_color = 'blue'
     print()
     print('After: point3 and point4 are:', point3, point4)
     print('Fillcolors are:', point3.fill_color, point4.fill_color)
-    print('T or F: point3 is point4?', point3 is point4)
-    print('T or F: point3 == point4?', point3 == point4)
+    print('T or F: point3 is point4?', point3 is point4)  # False
+    print('T or F: point3 == point4?', point3 == point4)  # False
 
     print()
     print('Second, another Point (point5) is assigned')
@@ -142,15 +142,15 @@ def main():
     print('points3, 4 and 5 are:', point3, point4, point5)
     print('Fillcolors are:',
           point3.fill_color, point4.fill_color, point5.fill_color)
-    print('T or F: point3 is point5?', point3 is point5)
-    print('T or F: point3 is point4?', point3 is point4)
-    print('T or F: point4 is point5?', point4 is point5)
+    print('T or F: point3 is point5?', point3 is point5)  # True
+    print('T or F: point3 is point4?', point3 is point4)  # False
+    print('T or F: point4 is point5?', point4 is point5)  # False
 
     print()
     print('Now the == operator:')
-    print('T or F: point3 == point5?', point3 == point5)
-    print('T or F: point3 == point4?', point3 == point4)
-    print('T or F: point4 == point5?', point4 == point5)
+    print('T or F: point3 == point5?', point3 == point5)  # True
+    print('T or F: point3 == point4?', point3 == point4)  # False
+    print('T or F: point4 == point5?', point4 == point5)  # False
 
 
 # ----------------------------------------------------------------------
